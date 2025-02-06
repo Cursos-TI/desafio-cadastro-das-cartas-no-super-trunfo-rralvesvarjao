@@ -9,6 +9,8 @@
     int main(){
         float p1, p2, p3, p4, ar1, ar2, ar3, ar4, po1, po2, po3, po4, pt1, pt2, pt3, pt4;
         char a1, a2, a3, a4;
+        float densidade;
+        float pibcap;
     
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
@@ -32,6 +34,11 @@
     scanf("%f", &p1);
     printf("Digite o Ponto Turistico cidade 1: \n");
     scanf("%f", &pt1);
+
+    densidade = (float) po1 / ar1;
+    printf("Densidade demográfica: %6.f\n", densidade);
+    pibcap = (float) p1 / po1;
+    printf("O PIB é: %6.f\n", pibcap);
     
     printf("Digite o nome da cidade 2: \n");
     scanf("%s", &a2);
@@ -43,6 +50,11 @@
     scanf("%f", &p2);
     printf("Digite o Ponto Turistico cidade 2: \n");
     scanf("%f", &pt2);
+
+    densidade = (float) po2 / ar2;
+    printf("Densidade demográfica: %6.f\n", densidade);
+    pibcap = (float) p2 / po2;
+    printf("O PIB é: %6.f\n", pibcap);
     
     printf("Diigite o nome da cidade 3: \n");
     scanf("%s", &a3);
@@ -55,6 +67,11 @@
     printf("Digite o Ponto Turistico cidade 3: \n");
     scanf("%f", &pt3);
 
+    densidade = (float) po3 / ar3;
+    printf("Densidade demográfica: %6.f\n", densidade);
+    pibcap = (float) p3 / po3;
+    printf("O PIB é: %6.f\n", pibcap);
+
     printf("Digite o nome da cidade 4: \n");
     scanf("%s", &a4);
     printf("Digite a Polução da cidade 4: \n");
@@ -65,6 +82,11 @@
     scanf("%f", &p4);
     printf("Digite o Ponto Turistico cidade 4: \n");
     scanf("%f", &pt4);
+
+    densidade = (float) po4 / ar4;
+    printf("Densidade demográfica: %6.f\n", densidade);
+    pibcap = (float) p4 / po4;
+    printf("O PIB é: %6.f\n", pibcap);
 
     return 0;
 }
